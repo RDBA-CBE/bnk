@@ -17,7 +17,7 @@ export default function GlobalReach() {
       />
 
       <div className="global-reach__inner section-wid relative z-10">
-        <div className="global-reach__grid grid grid-cols-1 lg:grid-cols-[2fr_3fr] items-center gap-0 ">
+        <div className="global-reach__grid grid grid-cols-1 xl:grid-cols-[2fr_3fr] items-center gap-0">
 
           {/* ══════ LEFT — text content ══════ */}
           <div className="global-reach__content flex flex-col gap-2">
@@ -27,7 +27,7 @@ export default function GlobalReach() {
 
             {/* Headline */}
             <h2 className="section-ti !text-white ">
-              From India<br />
+              From India <br className="hidden lg:block"/>
               to Global Tables.
             </h2>
 
@@ -56,9 +56,9 @@ export default function GlobalReach() {
           </div>
 
           {/* ══════ RIGHT — map illustration ══════ */}
-          <div className="global-reach__map relative w-full aspect-[4/3] lg:aspect-[16/9]">
+          <div className="global-reach__map relative w-full aspect-[6/3] lg:aspect-[16/9]">
             <Image
-              src="/bkn/global.png"
+              src="/bkn/globalLocation.png"
               alt="BNK export map showing routes from India to Canada, USA, UK, Europe, Gulf, Asia and Oman"
               fill
               className="object-contain object-center"

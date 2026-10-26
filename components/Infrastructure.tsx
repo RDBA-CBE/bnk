@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Infrastructure() {
   return (
-    <section className="w-full !pt-0 md:!pt-16 section-pad bg-beige">
+    <section className="w-full !pt-16 sm:!pt-16 section-pad bg-beige">
       <div className="section-wid">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-0">
 
           {/* LEFT — facility photo */}
-          <div className="lg:col-span-7 rounded-xl">
+          <div className="xl:col-span-7 rounded-xl">
             <img
               src="/bkn/built-for-scale.png"
               alt="BNK rice processing facility with silos and storage units"
@@ -16,12 +16,12 @@ export default function Infrastructure() {
           </div>
 
           {/* RIGHT — content */}
-          <div className="lg:col-span-5 flex flex-col justify-center gap-6 pt-8 pb-4 px-2 lg:ps-10 2xl:ps-20 lg:py-12">
+          <div className="xl:col-span-5 flex flex-col justify-center gap-6 pt-8 pb-4 px-2 xl:ps-10 2xl:ps-20 xl:py-12">
 
             <h3 className="section-label">Built For Scale</h3>
 
             <h2 className="section-ti ">
-              Infrastructure That<br />
+              Infrastructure That <br className="hidden lg:block"/>
               Keeps<br />
               <span className="text-green">Supply Moving.</span>
             </h2>
@@ -46,7 +46,7 @@ export default function Infrastructure() {
               </div>
             </div>
 
-            <p className="tag-strip !text-[16px] md:!text-[14px] lg:!text-[16px] xl:!text-[22px]">
+            <p className="tag-strip !text-[14px] sm:!text-[16px] lg:!text-[16px] xl:!text-[17px] text-green !font-bold">
               Processing&nbsp;•&nbsp;Storage&nbsp;•&nbsp;Milling&nbsp;•&nbsp;Dispatch
             </p>
 

@@ -70,11 +70,11 @@ export default function WhoWeServe() {
         sizes="100vw"
       />
 
-      <div className="absolute xl:hidden inset-0 pointer-events-none bg-[linear-gradient(to_top_right,#ffffff96_0%,#ffffff96_60%,transparent_100%)] xl:bg-[linear-gradient(to_top_right,#fff_0%,#fff_4%,transparent_100%)]" />
+      <div className="absolute xl:hidden inset-0 pointer-events-none bg-[linear-gradient(to_top_right,#ffffffc4_0%,#ffffffc4_60%,transparent_100%)] xl:bg-[linear-gradient(to_top_right,#fff_0%,#fff_4%,transparent_100%)]" />
 
-      
+       
 
-      <div className="section-wid relative z-10 pb-16 md:!pb-60 lg:!pb-16 section-pad">
+      <div className="section-wid relative z-10 !pb-5 lg:!pb-16 section-pad">
         {/* ── Top header: eyebrow + headline + body ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-5">
@@ -92,7 +92,7 @@ export default function WhoWeServe() {
         </div>
 
         {/* ── Mobile (<1000px): vertical timeline ── */}
-        <div className="flex flex-col mt-10 min-[1000px]:hidden">
+        <div className="flex flex-col mt-10 min-[1280px]:hidden">
           {steps.map((step, i) => (
             <div key={step.num} className="flex gap-4">
               {/* Left: circle + connecting line */}
@@ -101,11 +101,11 @@ export default function WhoWeServe() {
                   <span className="text-white text-[13px] !font-[700]">{step.num}</span>
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="w-[2px] flex-1 bg-[#67A005] my-1" />
+                  <div className="w-[2px] flex-2 bg-[#67A005] my-1" />
                 )}
               </div>
               {/* Right: title + desc */}
-              <div className="pb-8">
+              <div className="pb-12">
                 <span className="block font-semibold leading-[1.3] whitespace-pre-line text-[20px]">
                   {step.title}
                 </span>
@@ -118,9 +118,9 @@ export default function WhoWeServe() {
         </div>
 
         {/* ── Desktop (≥1000px): original absolute-positioned ladder ── */}
-        <div className="hidden min-[1000px]:grid grid-cols-12 gap-8 xl:-mt-20 mb-10">
+        <div className="hidden min-[1280px]:grid grid-cols-12 gap-8 xl:-mt-20 mb-10">
           {/* ── Ladder + steps ── */}
-          <div className="col-span-10 lg:col-span-9 xl:col-span-8 relative w-full mt-30 py-3 xl:py-0">
+          <div className="col-span-10 lg:col-span-9 xl:col-span-8 relative w-full mt-40 lg:mt-30 xl:mt-40 2xl:mt-30 py-3 xl:py-0">
             {/* Ladder image */}
             <img
               src="/bkn/who-we-serve-step-ladder.png"

@@ -9,12 +9,12 @@ export default function OurStory() {
     >
       {/* ── Decorative subtle organic wave contour lines in top-left ── */}
 
-      <div className="section-wid relative z-10 pt-0 py-16  lg:py-20">
-        <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0">
+      <div className="section-wid relative z-10 pt-0 py-16 xl:py-20">
+        <div className="flex flex-col xl:flex-row items-stretch gap-2 xl:gap-0">
           {/* ══════════════════════════════════════
               LEFT — Section Label + Headline + Body + CTA + Stats
           ══════════════════════════════════════ */}
-          <div className="w-full lg:w-5/12 flex flex-col gap-5 shrink-0 justify-center pr-0 lg:pr-6 pb-6 lg:pb-0">
+          <div className="w-full xl:w-5/12 flex flex-col gap-5 shrink-0 justify-center pr-0 xl:pr-6 pb-6 xl:pb-0">
             <h3 className="section-label !w-[95%]">OUR STORY</h3>
 
             <h2 className="section-ti">
@@ -46,7 +46,7 @@ export default function OurStory() {
                 <h4 className="our-story-stat-num !font-[500] leading-none text-green">
                   40<span style={{ color: "#CFEF54" }}>+</span>
                 </h4>
-                <span className="text-[20px] mt-1  whitespace-nowrap">
+                <span className="text-[20px] mt-1  whitespace-nowrap !font-medium">
                   Years of Rice Expertise
                 </span>
               </div>
@@ -61,7 +61,7 @@ export default function OurStory() {
                 <h4 className="our-story-stat-num !font-[500] leading-none text-green">
                   4
                 </h4>
-                <span className="text-[20px] mt-1 whitespace-nowrap">
+                <span className="text-[20px] mt-1 whitespace-nowrap !font-medium">
                   Integrated Processing Units
                 </span>
               </div>
@@ -76,7 +76,7 @@ export default function OurStory() {
                 <h4 className="our-story-stat-num !font-[500] leading-none text-green">
                   10+
                 </h4>
-                <span className="text-[20px] mt-1  whitespace-nowrap">
+                <span className="text-[20px] mt-1  whitespace-nowrap !font-medium">
                   International Markets
                 </span>
               </div>
@@ -87,11 +87,11 @@ export default function OurStory() {
               RIGHT — Hand + Grain Composition
               with 3 Floating White Cards & 3 Curved Dotted Vectors
           ══════════════════════════════════════ */}
-          <div className="lg:w-7/12 relative flex-1 ">
+          <div className="w-full xl:w-7/12 relative flex-1 min-h-[460px] md:min-h-[520px]">
             {/* ── Hand / grain image anchored bottom-right ── */}
             <div className="absolute  2xl:-right-24 -bottom-20 w-[800px] 2xl:w-[900px] 2xl:h-[700px] pointer-events-none">
               <img
-                src="/bkn/our-story-1.png"
+                src="/bkn/handRice-1.png"
                 alt="Hand holding a rice grain with scenic rice fields inside"
                 
                 className=" object-right-bottom pointer-events-none"

@@ -75,7 +75,7 @@ export default function ItStartsWithGrain() {
                 // }}
               >
                 <h3
-                  className="text-[18px] md:text-[20px] xl:text-[22px] "
+                  className="text-[18px] md:text-[20px] xl:text-[22px] !font-semibold"
                  
                 >
                   {card.title}

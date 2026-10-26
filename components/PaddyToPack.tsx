@@ -59,7 +59,7 @@ export default function PaddyToPack() {
           </div>
 
           {/* ── Step thumbnails ── */}
-          <div className="grid grid-cols-4 sm:grid-cols-7 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3">
             {steps.map((step) => (
               <button
                 key={step.id}
@@ -89,7 +89,7 @@ export default function PaddyToPack() {
                 {/* Label */}
                 <span
                   className={[
-                    "mt-2 lg:mt-4 text-center text-[14px] text-[18px]  2xl:text-[22px] !font-[600]",
+                    "mt-2 lg:mt-4 text-center text-[14px] md:text-[18px]  2xl:text-[22px] !font-[600]",
                     active === step.id
                       ? "text-green font-semibold"
                       : "text-[#000]",

@@ -82,17 +82,17 @@ export default function BusinessCTA() {
 
       {/* ── Bottom: 3-feature strip ── */}
       <div className="business-cta__features max-w-6xl py-10 m-auto">
-        <div className="business-cta__feature-grid grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="business-cta__feature-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
             <div
               key={i}
               className={[
                 "flex items-start gap-4",
-                i < features.length - 1 ? "sm:border-r sm:border-[#E0E0E0] sm:pr-6" : "",
+                i < features.length - 1 ? "md:border-r md:border-[#E0E0E0] sm:pr-6" : "",
               ].join(" ")}
             >
               {/* Icon */}
-              <div className="relative w-10 h-10 shrink-0">
+              <div className="relative w-8 h-8 lg:w-10 lg:h-10 shrink-0">
                 <Image
                   src={f.icon}
                   alt={f.title}

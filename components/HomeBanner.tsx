@@ -44,13 +44,13 @@ export default function HomeBanner() {
         }}
       />
 
-      <div className="section-wid relative z-10 flex flex-col lg:flex-row min-h-0 lg:min-h-[calc(100vh-64px)]">
+      <div className="section-wid relative z-10 flex flex-col xl:flex-row min-h-0 xl:min-h-[calc(100vh-64px)]">
         {/* ══════════════════════════════════════
             LEFT — text + CTAs + bags
         ══════════════════════════════════════ */}
-        <div className="flex flex-col gap-4 sm:gap-5 w-full lg:w-1/2 xl:w-5/12 pt-8 pb-4 sm:pt-12 sm:pb-8 lg:py-10 xl:py-14 shrink-0">
+        <div className="flex flex-col items-start md:items-center xl:items-start gap-4 sm:gap-5 w-full xl:w-5/12 pt-8 pb-4 sm:pt-12 sm:pb-8 xl:py-14 shrink-0">
           {/* Eyebrow */}
-          <p className="text-[20px] xl:text-[22px] tracking-wide mt-2 sm:mt-4 text-green font-medium">
+          <p className="text-[20px] xl:text-[22px] tracking-wide mt-2 sm:mt-4 text-green font-medium ">
             Premium Indian{" "}
             <strong className="font-bold">Rice Exporters</strong>
           </p>
@@ -65,16 +65,16 @@ export default function HomeBanner() {
               <img
                 src="/bkn/banner-rice.png"
                 alt=""
-                className="w-full h-full object-contain"
+                className="w-full h-full"
               />
             </span>
-            <span style={{ color: "#0C5402" }}>obal</span>
-            <br />
+            <span style={{ color: "#0C5402" }}>obal </span>
+            <br className="hidden xl:block"/>
             <span style={{ color: "#0C5402" }}>Reach.</span>
           </h1>
 
           {/* Body copy */}
-          <p className="text-[18px]  xl:text-[22px] leading-[1.6] sm:leading-[1.5] max-w-[660px] text-black">
+          <p className="text-[18px]  xl:text-[22px] leading-[1.6] sm:leading-[1.5] xl:max-w-[660px] text-black text-start md:text-center xl:text-start">
             From carefully sourced paddy and modern processing to export-ready
             packing and dependable global supply, BNK delivers the richness of
             Indian rice to international buyers with consistency, scale and trust.
@@ -84,21 +84,21 @@ export default function HomeBanner() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mt-1">
             <Link
               href="/our-products"
-              className="btn-red inline-flex items-center justify-center gap-2 font-semibold !text-[16px] sm:!text-[18px] lg:!text-[18px]  2xl:!text-[20px] !py-3 !px-6 sm:!px-5 xl:!px-[30px] text-center"
+              className="btn-red inline-flex items-center justify-center gap-2 !font-semibold !text-[16px] sm:!text-[18px] lg:!text-[18px]  2xl:!text-[20px] !py-3 !px-6 sm:!px-5 xl:!px-[30px] text-center"
             >
               Explore Our Products
               <ArrowRight className="w-4 h-4 shrink-0" />
             </Link>
             <Link
               href="/contact"
-              className="btn-red-outline inline-flex items-center justify-center gap-2 !bg-[#fff] !text-[16px] sm:!text-[18px] xl:!text-[20px] !py-2.5 !px-6 sm:!px-5 xl:!px-[30px] text-center"
+              className="btn-red-outline inline-flex items-center justify-center gap-2 !bg-[#fff] !text-[16px] sm:!text-[18px] xl:!text-[20px] !font-semibold !py-2.5 !px-6 sm:!px-5 xl:!px-[30px] text-center"
             >
               Enquire for Bulk Orders
             </Link>
           </div>
 
           {/* Product bag row */}
-          <div className="flex justify-center lg:justify-start items-end gap-1.5 min-[380px]:gap-2 sm:gap-3 xl:gap-[10px] mt-4 sm:mt-6 overflow-x-auto sm:overflow-visible pb-1 no-scrollbar max-w-full">
+          <div className="flex justify-center xl:justify-start items-end gap-1.5 min-[380px]:gap-2 sm:gap-3 xl:gap-[10px] mt-4 sm:mt-6 overflow-x-auto sm:overflow-visible pb-1 no-scrollbar max-w-full">
             {bags.map((bag, i) => (
               <BagCard key={i} {...bag} />
             ))}
@@ -110,14 +110,14 @@ export default function HomeBanner() {
             Desktop: Absolute right-anchored full height map
             Tablet & Mobile: Flow-centered responsive graphic
         ══════════════════════════════════════ */}
-        <div className="w-full lg:w-1/2 xl:w-7/12 relative flex-1 self-stretch flex items-center justify-center lg:justify-end my-4 sm:my-6 lg:my-0 min-h-[260px] sm:min-h-[380px] md:min-h-[460px] lg:min-h-[420px]">
+        <div className="w-full xl:w-7/12 relative flex-1 self-stretch flex items-center justify-center xl:justify-end my-4 sm:my-6 xl:my-0 min-h-[260px] sm:min-h-[380px] md:min-h-[500px] xl:min-h-[420px]">
           <Image
             src="/bkn/banner-img.png"
             alt="Floating India rice-field map with farmers, tractor, airplane and shipping port"
             width={900}
             height={820}
             priority
-            className="w-full h-auto max-h-[300px] sm:max-h-[420px] md:max-h-[500px] lg:max-h-none lg:h-full object-contain object-center lg:object-right relative lg:absolute right-0 lg:-right-10 xl:-right-20 scale-100 lg:scale-[1.05] xl:scale-[1.12]"
+            className="w-full h-auto max-h-[300px] sm:max-h-[420px] md:max-h-[560px] xl:max-h-none xl:h-full object-contain object-center xl:object-right relative xl:absolute right-0 xl:-right-10 2xl:-right-20 scale-100 xl:scale-[1.05] 2xl:scale-[1.12]"
           />
         </div>
       </div>

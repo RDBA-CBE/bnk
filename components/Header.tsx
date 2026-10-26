@@ -43,12 +43,12 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden [@media(min-width:1300px)]:flex items-center gap-10">
+          <nav className="hidden [@media(min-width:1400px)]:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className={`flex items-center gap-3 text-[18px] transition-colors font-medium ${
+                className={`flex items-center gap-3 text-[18px] transition-colors !font-medium ${
                   isActive(link.href) ? "text-green" : "text-[#000]"
                 }`}
               >
@@ -61,10 +61,10 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden [@media(min-width:1300px)]:flex shrink-0">
+          <div className="hidden [@media(min-width:1400px)]:flex shrink-0">
             <a
               href="/contact"
-              className="btn-header inline-flex items-center gap-2 transition-colors"
+              className="btn-header inline-flex items-center gap-2 transition-colors !font-medium"
             >
               Connect With Us
               <span aria-hidden="true"><ArrowRight className="w-6 h-6" /></span>
@@ -73,7 +73,7 @@ const Header = () => {
 
           {/* Hamburger — visible below 1300px */}
           <button
-            className="[@media(min-width:1300px)]:hidden flex flex-col gap-1.5 p-1"
+            className="[@media(min-width:1400px)]:hidden flex flex-col gap-1.5 p-1"
             aria-label="Toggle menu"
             onClick={() => setMenuOpen(true)}
           >

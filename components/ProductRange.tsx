@@ -110,7 +110,7 @@ export default function ProductRange() {
 
           <Link
             href="/our-products"
-            className="inline-flex shrink-0 items-center gap-1.5 self-end border-b-[1.5px] border-[#111] pb-0.5 font-medium text-base text-[#111] no-underline [font-family:'Manrope',sans-serif]"
+            className="inline-flex shrink-0 items-center gap-1.5 self-end border-b-[1.5px] border-[#111] pb-0.5 !font-semibold text-[18px]  no-underline"
           >
             Explore the Rice Range
             <ArrowUpRight className="h-4 w-4" />
@@ -120,7 +120,7 @@ export default function ProductRange() {
         {/* Card + tabs wrapper */}
         <div className="overflow-hidden">
           {/* Two-column card */}
-          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr]">
+          <div className="grid grid-cols-1 xl:grid-cols-[3fr_2fr]">
             {/* LEFT — product image */}
             <div className="relative aspect-[16/10]">
               <span className="absolute left-0 top-4 z-10 bg-[rgba(255,255,255,0.88)] px-[10px] py-2 text-[14px] font-semibold tracking-[0.08em] text-[#444]">
@@ -139,7 +139,7 @@ export default function ProductRange() {
             </div>
 
             {/* RIGHT — product details */}
-            <div className="flex flex-col lg:items-center justify-between bg-[#FAF7EA] py-10 lg:py-20">
+            <div className="flex flex-col justify-between bg-[#FAF7EA] py-10 xl:py-15 2xl:py-20 xl:px-20 px-8">
               <div className="flex flex-col gap-4">
                 <h3 className="section-label-sec">
                   {current.label}
@@ -149,13 +149,13 @@ export default function ProductRange() {
                   {current.title}
                 </h2>
 
-                <p className="text-base leading-[1.7] text-[#666]">
+                <p className="text-[18px] leading-[1.7] ">
                   {current.desc}
                 </p>
               </div>
 
               {/* Bottom tags */}
-              <div className="mt-5 flex w-100 items-center justify-between border-t border-[#D3D2C0] pt-5">
+              <div className="mt-5 flex w-full  justify-between border-t border-[#D3D2C0] pt-5">
                 <span className="text-[16px] !font-[500] text-green">
                   {current.tag1}
                 </span>

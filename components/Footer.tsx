@@ -63,8 +63,8 @@ const FacebookIcon = () => (
   </svg>
 );
 
-const LinkList = ({ items , border }: { items: { label: string; href: string }[], border?: string  }) => (
-  <ul  className={`footer-link-list h-90 space-y-1 ${border ? border : "border"}`}>
+const LinkList = ({ items, border }: { items: { label: string; href: string }[], border?: string }) => (
+  <ul className={`footer-link-list flex-1 space-y-1 ${border ?? ""}`}>
     {items.map((l) => (
       <li key={l.label} >
         <Link href={l.href} className="text-[16px] text-white  hover:text-white transition-colors ">
@@ -90,15 +90,15 @@ export default function Footer() {
 
       {/* Main content */}
       <div className="site-footer__main relative section-wid py-14">
-        <div className="site-footer__grid grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr_1fr_1.2fr]">
+        <div className="site-footer__grid grid grid-cols-2 md:grid-cols-3  gap-10 xl:grid-cols-[1.8fr_1fr_1fr_1fr_1fr_1.2fr] max-[1024px]:gap-x-6 max-[1024px]:gap-y-8 max-[768px]:gap-x-5 max-[768px]:gap-y-7 max-[480px]:gap-6">
 
           {/* Brand */}
-          <div className="site-footer__brand flex flex-col gap-4">
+          <div className="site-footer__brand flex flex-col justify-start xl:justify-center gap-4 col-span-full xl:col-span-1">
             <img src="/bkn/logo-white.png" alt="BNK Logo" className="site-footer__logo h-16 w-46" />
             <h4 className="text-white !font-[400]  text-[22px] !mt-5">
               Premium Indian Rice Exporters
             </h4>
-            <p className="site-footer__description text-white text-[16px]  leading-relaxed w-90">
+            <p className="site-footer__description text-white text-[16px] leading-relaxed max-w-full lg:max-w-none">
               Rooted in tradition. Built for global reach. BNK brings the finest
               Indian rice to tables across the world — with quality, integrity
               and a commitment to a healthier future.
@@ -114,31 +114,31 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="site-footer__column">
+          <div className="site-footer__column flex flex-col justify-start xl:justify-center">
             <h3 className="text-white font-semibold text-[20px] !mb-5 ">Quick Links</h3>
-            <LinkList items={quickLinks}  border="border-r border-[#50724D]"/>
+            <LinkList items={quickLinks} border="xl:border-r xl:border-[#50724D]" />
           </div>
 
           {/* Our Products */}
-          <div className="site-footer__column">
+          <div className="site-footer__column flex flex-col justify-start xl:justify-center">
             <h3 className="text-white font-semibold text-[20px] !mb-5">Our Products</h3>
-            <LinkList items={products}  border="border-r border-[#50724D]" />
+            <LinkList items={products} border="xl:border-r xl:border-[#50724D]" />
           </div>
 
           {/* Our Company */}
-          <div className="site-footer__column">
+          <div className="site-footer__column flex flex-col justify-start xl:justify-center">
             <h3 className="text-white font-semibold text-[20px] !mb-5">Our Company</h3>
-            <LinkList items={company}  border="border-r border-[#50724D]" />
+            <LinkList items={company} border="xl:border-r xl:border-[#50724D]" />
           </div>
 
           {/* Business */}
-          <div className="site-footer__column">
+          <div className="site-footer__column flex flex-col justify-start xl:justify-center">
             <h3 className="text-white font-semibold text-[20px] !mb-5">Business</h3>
-            <LinkList items={business} border="border-r border-[#50724D]"/>
+            <LinkList items={business} border="xl:border-r xl:border-[#50724D]" />
           </div>
 
           {/* Contact Us */}
-          <div className="site-footer__contact">
+          <div className="site-footer__contact col-span-full md:col-span-2 xl:col-span-1">
             <h3 className="text-white font-semibold text-[20px] !mb-5">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

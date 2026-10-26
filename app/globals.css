@@ -524,6 +524,11 @@ button, a {
   .section-wid {
     width: 92%; 
   } 
+
+  .section-wid-sec {
+    width: 92%;
+    margin: auto; 
+  }
 }
 
 @media (max-width: 460px) {
@@ -576,73 +581,65 @@ button, a {
 }
 
 /* ══════════════════════════════════════════════════════════
-   OUR STORY SECTION — RESPONSIVE MEDIA QUERIES ONLY (<= 1024px)
-   Desktop (> 1024px) remains 100% unaltered as originally written
+   OUR STORY SECTION — RESPONSIVE MEDIA QUERIES (<= 1280px)
    ══════════════════════════════════════════════════════════ */
 
-@media (max-width: 1024px) {
-  /* Layout & Section padding */
+@media (max-width: 1280px) { 
   .about-bg-pseudo .section-wid {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-
-  /* Stats row in single row, no overflow */
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center {
+  /* Stats row */
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center {
     width: 100% !important;
     justify-content: space-between !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col {
     padding-left: 12px !important;
     padding-right: 12px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
     padding-left: 0 !important;
     padding-right: 12px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
     padding-left: 12px !important;
     padding-right: 0 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 h4 {
+  .about-bg-pseudo .xl\:w-5\/12 h4 {
     font-size: 44px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 span.text-\[20px\] {
-    font-size: 15px !important;
+  .about-bg-pseudo .xl\:w-5\/12 span.text-\[20px\] {
+    font-size: 18px !important;
     white-space: normal !important;
     line-height: 1.25 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 .w-\[1px\] {
+  .about-bg-pseudo .xl\:w-5\/12 .w-\[1px\] {
     height: 42px !important;
     margin-right: 10px !important;
   }
 
-  /* Right column: Hand & Grain Composition centered */
-  .about-bg-pseudo .lg\:w-7\/12 {
+  /* Right column */
+  .about-bg-pseudo .xl\:w-7\/12 {
     width: 100% !important;
     min-height: 440px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-top: 16px !important;
     position: relative !important;
   }
 
-  .about-bg-pseudo .lg\:w-7\/12 > div {
+  .about-bg-pseudo .xl\:w-7\/12 > div {
     position: relative !important;
-    right: -16px !important; 
-    bottom: auto !important; 
+    right: 0px !important;
+    bottom: -50px !important;
     width: 100% !important;
     max-width: 540px !important;
     height: auto !important;
@@ -650,7 +647,7 @@ button, a {
     justify-content: center !important;
   }
 
-  .about-bg-pseudo .lg\:w-7\/12 img {
+  .about-bg-pseudo .xl\:w-7\/12 img {
     width: 100% !important;
     height: auto !important;
     object-fit: contain !important;
@@ -659,16 +656,10 @@ button, a {
 }
 
 @media (max-width: 768px) {
-  /* Layout & Section padding */
   .about-bg-pseudo .section-wid {
     padding-top: 2rem !important;
-    padding-bottom: 0rem !important; 
+    padding-bottom: 0rem !important;
   }
-/* 
-  .about-bg-pseudo p {
-    font-size: 15px !important;
-    line-height: 1.6 !important;
-  } */ 
 
   .btn-primary {
     font-size: 16px !important;
@@ -676,100 +667,106 @@ button, a {
   }
 
   .btn-sec {
-    font-size: 16px !important; 
+    font-size: 16px !important;
   }
 
-  /* Stats row scaling */
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center {
     margin-top: 18px !important;
     padding-top: 0 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
     padding-left: 0 !important;
     padding-right: 8px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
     padding-left: 8px !important;
     padding-right: 0 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 h4 {
+  .about-bg-pseudo .xl\:w-5\/12 h4 {
     font-size: 34px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 span.text-\[20px\] {
-    font-size: 13px !important;
+  .about-bg-pseudo .xl\:w-5\/12 span.text-\[20px\] {
+    font-size: 18px !important;
     line-height: 1.2 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 .w-\[1px\] {
+  .about-bg-pseudo .xl\:w-5\/12 .w-\[1px\] {
     height: 34px !important;
     margin-right: 6px !important;
   }
 
-  /* Right column scaling */
-  .about-bg-pseudo .lg\:w-7\/12 {
+  .about-bg-pseudo .xl\:w-7\/12 {
     min-height: 340px !important;
     margin-top: 10px !important;
-  } 
+  }
+}
 
-  /* .about-bg-pseudo .lg\:w-7\/12 > div {
-    max-width: 440px !important;
-  } */
+@media (max-width: 600px) {
+  .about-bg-pseudo .xl\:w-7\/12 > div {
+    position: relative !important;
+    right: 0px !important;
+    bottom: auto !important;
+    width: 100% !important;
+    max-width: 540px !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 480px) {
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col {
     padding-left: 4px !important;
     padding-right: 4px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:first-child {
     padding-left: 0 !important;
     padding-right: 4px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
+  .about-bg-pseudo .xl\:w-5\/12 > div.flex.items-center > div.flex-col:last-child {
     padding-left: 4px !important;
     padding-right: 0 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 h4 {
+  .about-bg-pseudo .xl\:w-5\/12 h4 {
     font-size: 28px !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 span.text-\[20px\] {
-    font-size: 11.5px !important;
+  .about-bg-pseudo .xl\:w-5\/12 span.text-\[20px\] {
+    font-size: 14px !important;
     line-height: 1.2 !important;
   }
 
-  .about-bg-pseudo .w-full.lg\:w-5\/12 .w-\[1px\] {
+  .about-bg-pseudo .xl\:w-5\/12 .w-\[1px\] {
     height: 28px !important;
     margin-right: 4px !important;
   }
 
-  .about-bg-pseudo .lg\:w-7\/12 {
+  .about-bg-pseudo .xl\:w-7\/12 {
     min-height: 260px !important;
   }
 
-  .about-bg-pseudo .lg\:w-7\/12 > div {
-    max-width: 500px !important; 
+  .about-bg-pseudo .xl\:w-7\/12 > div {
+    max-width: 500px !important;
   }
 }
 
 /* ══════════════════════════════════════════════════════════
-   PRODUCT RANGE SECTION — RESPONSIVE MEDIA QUERIES ONLY (<= 1024px)
-   Desktop (> 1024px) remains 100% unaltered as originally written
+   PRODUCT RANGE SECTION — RESPONSIVE MEDIA QUERIES
    ══════════════════════════════════════════════════════════ */
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   /* Right column details card */
   .product-range-section .bg-\[\#FAF7EA\] {
     padding-top: 2.5rem !important;
@@ -896,7 +893,7 @@ button, a {
 }
 
 /* QUALITY SECTION — responsive adjustments only; desktop styles stay unchanged. */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   /* .quality-section {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -1042,7 +1039,7 @@ button, a {
 } 
 
 /* GLOBAL REACH + BUSINESS CTA — responsive styles only; desktop stays unchanged. */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .global-reach {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -1062,7 +1059,7 @@ button, a {
   }
 
   .global-reach__content .stat-hero {
-    font-size: 68px;
+    font-size: 80px; 
   }
 
   .global-reach__content .text-white:not(.stat-hero) {
@@ -1079,7 +1076,7 @@ button, a {
   }
 
   .global-reach__map {
-    aspect-ratio: 16 / 10 !important;
+    /* aspect-ratio: 16 / 10 !important; */
     max-height: 520px;
   }
 
@@ -1151,11 +1148,11 @@ button, a {
   }
 
   .global-reach__content .stat-hero {
-    font-size: 56px;
+    font-size: 60px; 
   }
 
   .global-reach__content .text-white:not(.stat-hero) {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .global-reach__content .tag-strip {
@@ -1163,7 +1160,7 @@ button, a {
   }
 
   .global-reach__map {
-    aspect-ratio: 4 / 3 !important;
+    /* aspect-ratio: 4 / 3 !important; */
     max-height: none;
   }
 
@@ -1205,6 +1202,8 @@ button, a {
 }
 
 @media (max-width: 480px) {
+
+  
   .global-reach {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1219,8 +1218,8 @@ button, a {
   }
 
   .global-reach__content .stat-hero {
-    font-size: 46px;
-  }
+    font-size: 55px;
+  } 
 
   .global-reach__content .flex.items-baseline {
     gap: 8px;
@@ -1228,7 +1227,7 @@ button, a {
   }
 
   .global-reach__content .text-white:not(.stat-hero) {
-    font-size: 14px;
+    font-size: 16px; 
   }
 
   .global-reach__content .tag-strip {
@@ -1240,8 +1239,8 @@ button, a {
     font-size: 14px;
   }
 
-  .global-reach__map {
-    aspect-ratio: 1 / 1 !important;
+  .global-reach__map { 
+    /* aspect-ratio: 1 / 1 !important; */
   }
  
   /* .business-cta__hero {
@@ -1290,20 +1289,10 @@ button, a {
 }
 
 /* FOOTER — responsive layout overrides; desktop styles remain unchanged. */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .site-footer__main {
     padding-top: 44px;
     padding-bottom: 44px;
-  }
-
-  .site-footer__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 32px 24px;
-  }
-
-  .site-footer__brand,
-  .site-footer__contact {
-    grid-column: 1 / -1;
   }
 
   .site-footer__logo {
@@ -1313,7 +1302,7 @@ button, a {
 
   .site-footer__description {
     width: 100%;
-    max-width: 560px;
+    /* max-width: 560px; */
     /* font-size: 15px; */
   }
 
@@ -1342,12 +1331,6 @@ button, a {
     line-height: 1.6;
   }
 
-  .site-footer__contact > ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px 24px;
-  }
-
   .site-footer__bottom-inner {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1360,16 +1343,6 @@ button, a {
     padding-bottom: 36px;
   }
 
-  .site-footer__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 28px 20px;
-  }
-
-  .site-footer__brand,
-  .site-footer__contact {
-    grid-column: 1 / -1;
-  }
-
   .site-footer__brand {
     gap: 12px;
   }
@@ -1380,7 +1353,7 @@ button, a {
   }
 
   .site-footer__description {
-    max-width: 480px;
+    /* max-width: 480px; */
     /* font-size: 14px; */
   }
 
@@ -1398,10 +1371,6 @@ button, a {
   .site-footer .footer-link-list {
     padding-right: 0;
     border-right: 0;
-  }
-
-  .site-footer__contact > ul {
-    gap: 14px 18px;
   }
 
   .site-footer__bottom-inner {
@@ -1423,16 +1392,6 @@ button, a {
     padding-bottom: 30px;
   }
 
-  .site-footer__grid {
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 24px;
-  }
-
-  .site-footer__brand,
-  .site-footer__contact {
-    grid-column: auto;
-  }
-
   .site-footer__logo {
     width: 160px;
   } 
@@ -1443,7 +1402,7 @@ button, a {
 
   /* .site-footer__description {
     font-size: 13px;
-  } */
+  } */ 
 
   .site-footer__column h3,
   .site-footer__contact h3 {
@@ -1454,12 +1413,7 @@ button, a {
   .site-footer .footer-link-list a,
   .site-footer__contact li span,
   .site-footer__contact li a {
-    font-size: 18px;
-  }
-
-  .site-footer__contact > ul {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 14px;
+    font-size: 16px; 
   }
 
   .site-footer__bottom-inner {
